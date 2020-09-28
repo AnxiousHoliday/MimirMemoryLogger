@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MimirMemoryLogger_Example' do
+  pod 'MimirMemoryLogger', :path => '../'
+
+  target 'MimirMemoryLogger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
