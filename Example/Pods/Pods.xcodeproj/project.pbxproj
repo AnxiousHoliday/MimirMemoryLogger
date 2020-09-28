@@ -12,7 +12,7 @@
 		19111D222522754C0095D86D /* MimirMemoryLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19111D1F2522754C0095D86D /* MimirMemoryLogger.swift */; };
 		19111D232522754C0095D86D /* HeapStackInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 19111D202522754C0095D86D /* HeapStackInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19111D2B252275BE0095D86D /* NSObject+HeapInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 19111D29252275BE0095D86D /* NSObject+HeapInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19111D2C252275BE0095D86D /* NSObject+HeapInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 19111D2A252275BE0095D86D /* NSObject+HeapInspector.m */; };
+		19111D2C252275BE0095D86D /* NSObject+HeapInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 19111D2A252275BE0095D86D /* NSObject+HeapInspector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		587B69ACD4A718DD58695D673EED48D8 /* Pods-MimirMemoryLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 083685B4502EA11E436BCBEC0B0E555A /* Pods-MimirMemoryLogger_Tests-dummy.m */; };
 		5E55FC63C3BE9D9A1591873CC9A17491 /* MimirMemoryLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F206EE60935BF7D6A03A307B7FC63C /* MimirMemoryLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		615E93C97C4DD64734442FC7A0CEAE64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
