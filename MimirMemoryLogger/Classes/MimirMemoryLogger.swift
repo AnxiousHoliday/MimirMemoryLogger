@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MimirMemoryLogger: NSObject {
+public class MimirMemoryLogger: NSObject {
     @objc public static func getSavedSnapshots() -> [URL]? {
         guard let memorySnapshotFiles = getSnapshotFiles() else {
             print("MimirMemoryLogger no snapshots found")
