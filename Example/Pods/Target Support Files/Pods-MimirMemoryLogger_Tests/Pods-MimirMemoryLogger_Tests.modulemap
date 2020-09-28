@@ -1,0 +1,6 @@
+framework module Pods_MimirMemoryLogger_Tests {
+  umbrella header "Pods-MimirMemoryLogger_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

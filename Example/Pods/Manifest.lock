@@ -1,0 +1,16 @@
+PODS:
+  - MimirMemoryLogger (0.1.0)
+
+DEPENDENCIES:
+  - MimirMemoryLogger (from `../`)
+
+EXTERNAL SOURCES:
+  MimirMemoryLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MimirMemoryLogger: cf3bf74f23f0a68ae96fc1636306a927ac442ad3
+
+PODFILE CHECKSUM: 07b2a61f1eb89c7a450c48951a26d95245bdf589
+
+COCOAPODS: 1.8.4

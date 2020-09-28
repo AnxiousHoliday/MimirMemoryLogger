@@ -1,0 +1,6 @@
+framework module MimirMemoryLogger {
+  umbrella header "MimirMemoryLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
