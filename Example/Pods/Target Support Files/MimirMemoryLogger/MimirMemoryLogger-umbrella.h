@@ -14,3 +14,5 @@
 FOUNDATION_EXPORT double MimirMemoryLoggerVersionNumber;
 FOUNDATION_EXPORT const unsigned char MimirMemoryLoggerVersionString[];
 
+#import "NSObject+HeapInspector.h"
+#import "HeapStackInspector.h"
