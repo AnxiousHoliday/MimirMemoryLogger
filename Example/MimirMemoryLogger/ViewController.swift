@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MimirMemoryLogger
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func takeMemorySnapshotTapped(_ sender: Any) {
+        MimirMemoryLogger.saveCurrentSnapshotToFile { (url) -> (Void) in
+            guard let url = url else {
+                return
+            }
+            print("Latest memory snapshot location: \(url.absoluteString)")
+        }
+    }
 }
 
