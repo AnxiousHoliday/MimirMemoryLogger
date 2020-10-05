@@ -11,6 +11,7 @@ import UIKit
 public class MimirMemoryLogger {
     private static var isLoggingMemory = false
     public static var verbose = true
+    public static var maxNumberOfSnapshots = 5
     
     @objc public static func getSavedSnapshots() -> [URL]? {
         guard let memorySnapshotFiles = getSnapshotFiles() else {
@@ -76,12 +77,12 @@ public class MimirMemoryLogger {
     private static func deleteOldestLogFileIfNecessary() {
         guard var memorySnapshotFiles = getSnapshotFiles() else { return }
         do {
-            if memorySnapshotFiles.count > 5 {
+            if memorySnapshotFiles.count > maxNumberOfSnapshots {
                 // start deleting old logs files
                 memorySnapshotFiles.sort { (memoryLogFile1, memoryLogFile2) -> Bool in
                     return memoryLogFile1.dateCreated > memoryLogFile2.dateCreated
                 }
-                while memorySnapshotFiles.count > 5 {
+                while memorySnapshotFiles.count > maxNumberOfSnapshots {
                     let lastSnapshotFile = memorySnapshotFiles.removeLast()
                     try FileManager.default.removeItem(at: lastSnapshotFile.filePathURL)
                 }
