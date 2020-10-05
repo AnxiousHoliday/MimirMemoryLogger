@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4BCD972909DBFAEC7CD3CA0E5230DE /* Pods-MimirMemoryLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 344E3BB92990DC5110EFEEE1CA982B5D /* Pods-MimirMemoryLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19111D212522754C0095D86D /* HeapStackInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 19111D1E2522754C0095D86D /* HeapStackInspector.m */; };
-		19111D222522754C0095D86D /* MimirMemoryLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19111D1F2522754C0095D86D /* MimirMemoryLogger.swift */; };
-		19111D232522754C0095D86D /* HeapStackInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 19111D202522754C0095D86D /* HeapStackInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19111D2B252275BE0095D86D /* NSObject+HeapInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 19111D29252275BE0095D86D /* NSObject+HeapInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19111D2C252275BE0095D86D /* NSObject+HeapInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 19111D2A252275BE0095D86D /* NSObject+HeapInspector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		587B69ACD4A718DD58695D673EED48D8 /* Pods-MimirMemoryLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 083685B4502EA11E436BCBEC0B0E555A /* Pods-MimirMemoryLogger_Tests-dummy.m */; };
-		5E55FC63C3BE9D9A1591873CC9A17491 /* MimirMemoryLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F206EE60935BF7D6A03A307B7FC63C /* MimirMemoryLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		615E93C97C4DD64734442FC7A0CEAE64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		75E2CD5F03C6B92B4C5FE7A8432E7134 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9F407611E8AA0B46FA028374E2A45550 /* Pods-MimirMemoryLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B39D599F8394973029782A586C55D4 /* Pods-MimirMemoryLogger_Example-dummy.m */; };
-		B8C5B7EB835A35A382A9131121A9CFBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		EE5601D2A67294C3941A981342DB8A95 /* Pods-MimirMemoryLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD526A06E33561EBEFBFC2DE12FBB2E /* Pods-MimirMemoryLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F74BA6513C3FA500B0B2570AE13F3C91 /* MimirMemoryLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4925A179C040B8BA0F98ADCA4BFD2 /* MimirMemoryLogger-dummy.m */; };
+		0E024E2872F0FFD334A39756E4FFC6A5 /* Pods-MimirMemoryLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 344E3BB92990DC5110EFEEE1CA982B5D /* Pods-MimirMemoryLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2131187AC06C31CB3C8CC924BC0A1701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4806F99B12E9911B5389CC01CF535C6A /* Pods-MimirMemoryLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD526A06E33561EBEFBFC2DE12FBB2E /* Pods-MimirMemoryLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82974D30F0489A8B246AAD168F46951F /* HeapStackInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 35809F89B88A31A38527E265DA685BD0 /* HeapStackInspector.m */; };
+		9F22D61DC031D7830E17413A37A7EBE3 /* HeapStackInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A27737697B46FE3A04DCCBC480F4423 /* HeapStackInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1ECDAAC7B428A9AB875EA204ADEE112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C9EE299557AC1F2EB46C54F3B6B17CAD /* MimirMemoryLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 888572E38FA8C59D40915F99F0DD0373 /* MimirMemoryLogger-dummy.m */; };
+		CD3AC65892D6FCE5E1D7C39016AE7EF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D7E9305F4BF97F32170530CB732038E1 /* MimirMemoryLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74053F94ED187771698DD929A26FE5DF /* MimirMemoryLogger.swift */; };
+		F074E59A090E1219C173B3B4952F48AD /* Pods-MimirMemoryLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B39D599F8394973029782A586C55D4 /* Pods-MimirMemoryLogger_Example-dummy.m */; };
+		F19C37E5A9C7F947B8EF8F16AA1E43FA /* MimirMemoryLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E334A5AC1266092CC5873947AFDBB7 /* MimirMemoryLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F599E54B7E6E594D167F1C69797590B2 /* Pods-MimirMemoryLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 083685B4502EA11E436BCBEC0B0E555A /* Pods-MimirMemoryLogger_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		45AC2188158D27A0FC0BD30FA91F62B6 /* PBXContainerItemProxy */ = {
+		4B0BD6930CBAF5F3E3B4D4CB52925DAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4C241CDA10441BA68928A8DA0DFE53AD;
 			remoteInfo = MimirMemoryLogger;
 		};
-		7304BCE4375EEE707EE3DA9F63F76730 /* PBXContainerItemProxy */ = {
+		E5E67737D3AEAFD0735B73FA196F2C62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -41,66 +39,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B26036CF61F320698ADE7E11AE4717 /* MimirMemoryLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MimirMemoryLogger-Info.plist"; sourceTree = "<group>"; };
+		06FDDBC63E1209E2A85647EA60DD73AC /* MimirMemoryLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MimirMemoryLogger.debug.xcconfig; sourceTree = "<group>"; };
 		083685B4502EA11E436BCBEC0B0E555A /* Pods-MimirMemoryLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MimirMemoryLogger_Tests-dummy.m"; sourceTree = "<group>"; };
+		0A888E27EA42B774836E9F3DED948E6C /* MimirMemoryLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MimirMemoryLogger-prefix.pch"; sourceTree = "<group>"; };
 		14B39D599F8394973029782A586C55D4 /* Pods-MimirMemoryLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MimirMemoryLogger_Example-dummy.m"; sourceTree = "<group>"; };
-		19111D1E2522754C0095D86D /* HeapStackInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeapStackInspector.m; path = MimirMemoryLogger/Classes/HeapStackInspector.m; sourceTree = "<group>"; };
-		19111D1F2522754C0095D86D /* MimirMemoryLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MimirMemoryLogger.swift; path = MimirMemoryLogger/Classes/MimirMemoryLogger.swift; sourceTree = "<group>"; };
-		19111D202522754C0095D86D /* HeapStackInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeapStackInspector.h; path = MimirMemoryLogger/Classes/HeapStackInspector.h; sourceTree = "<group>"; };
-		19111D29252275BE0095D86D /* NSObject+HeapInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+HeapInspector.h"; path = "MimirMemoryLogger/Classes/NSObject+HeapInspector.h"; sourceTree = "<group>"; };
-		19111D2A252275BE0095D86D /* NSObject+HeapInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+HeapInspector.m"; path = "MimirMemoryLogger/Classes/NSObject+HeapInspector.m"; sourceTree = "<group>"; };
-		1BA4925A179C040B8BA0F98ADCA4BFD2 /* MimirMemoryLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MimirMemoryLogger-dummy.m"; sourceTree = "<group>"; };
 		24377F77278838D47904B070BD2FF621 /* Pods-MimirMemoryLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MimirMemoryLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		344E3BB92990DC5110EFEEE1CA982B5D /* Pods-MimirMemoryLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MimirMemoryLogger_Example-umbrella.h"; sourceTree = "<group>"; };
 		352B84C6C58513819A7CE39CB75394E2 /* Pods-MimirMemoryLogger_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MimirMemoryLogger_Example-Info.plist"; sourceTree = "<group>"; };
+		35809F89B88A31A38527E265DA685BD0 /* HeapStackInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeapStackInspector.m; path = MimirMemoryLogger/Classes/HeapStackInspector.m; sourceTree = "<group>"; };
 		419A012E1A64188F760AD1658BD1D7E3 /* Pods-MimirMemoryLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MimirMemoryLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		47974FD599B45739F1E3ADDEE2B2510D /* MimirMemoryLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MimirMemoryLogger-prefix.pch"; sourceTree = "<group>"; };
+		46E334A5AC1266092CC5873947AFDBB7 /* MimirMemoryLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MimirMemoryLogger-umbrella.h"; sourceTree = "<group>"; };
 		48716C17C68EB3298FFFDF46C854F164 /* Pods_MimirMemoryLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimirMemoryLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4ACD42B3024F7CE9EF9FF8C3F8873EAB /* MimirMemoryLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MimirMemoryLogger.xcconfig; sourceTree = "<group>"; };
+		4A27737697B46FE3A04DCCBC480F4423 /* HeapStackInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeapStackInspector.h; path = MimirMemoryLogger/Classes/HeapStackInspector.h; sourceTree = "<group>"; };
 		4F9494826BE6A4793A24599DDFA25E2A /* Pods-MimirMemoryLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MimirMemoryLogger_Tests.modulemap"; sourceTree = "<group>"; };
 		50D70528B7CEAD4EB2766167B359E804 /* Pods-MimirMemoryLogger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MimirMemoryLogger_Example.modulemap"; sourceTree = "<group>"; };
 		56E85158AB2416FDABF56015CF2E6043 /* MimirMemoryLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MimirMemoryLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C139D43A462E0DAC3AD535383BBC5B3 /* Pods-MimirMemoryLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimirMemoryLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5E5E1F00AC10CE8564C66D44CF477516 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		613DC0DEC41AF2107D05E11A97D08043 /* Pods-MimirMemoryLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimirMemoryLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
-		72D0A06CD4922FCB72D7964B2EEA8C97 /* MimirMemoryLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MimirMemoryLogger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		74053F94ED187771698DD929A26FE5DF /* MimirMemoryLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MimirMemoryLogger.swift; path = MimirMemoryLogger/Classes/MimirMemoryLogger.swift; sourceTree = "<group>"; };
+		888572E38FA8C59D40915F99F0DD0373 /* MimirMemoryLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MimirMemoryLogger-dummy.m"; sourceTree = "<group>"; };
 		9C80BC8DF97CFBBD8DD2EB7E6E48ED64 /* Pods_MimirMemoryLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimirMemoryLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C8EB5DE30C1D096FF984B3C830113B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A15631D52F26C5DE61996B99CABF6645 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A3DFE67C52343D881962A6D265ED994E /* MimirMemoryLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MimirMemoryLogger-Info.plist"; sourceTree = "<group>"; };
 		A740B5AD86648B0ADA4D8ADAE17078EF /* Pods-MimirMemoryLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimirMemoryLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A95FA7DAD94F00A2661C8979EB3519BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A9F206EE60935BF7D6A03A307B7FC63C /* MimirMemoryLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MimirMemoryLogger-umbrella.h"; sourceTree = "<group>"; };
 		ACD526A06E33561EBEFBFC2DE12FBB2E /* Pods-MimirMemoryLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MimirMemoryLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AD23120DD98423E5A22A36733E940926 /* Pods-MimirMemoryLogger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MimirMemoryLogger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B1CB2DC00F5867A5D5A50CBA5780D77D /* MimirMemoryLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MimirMemoryLogger.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		C72A5EC8A55326E872DA4D8E7E46FFCE /* Pods-MimirMemoryLogger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MimirMemoryLogger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C8D37B9585E4E73A7E0F1CEAF9E21311 /* Pods-MimirMemoryLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MimirMemoryLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
-		DD64698E1B380BCC0FD3C1210E56FC56 /* MimirMemoryLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MimirMemoryLogger.modulemap; sourceTree = "<group>"; };
+		CDFC0AF923953904341DF0C982E1236D /* MimirMemoryLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MimirMemoryLogger.release.xcconfig; sourceTree = "<group>"; };
 		E1CDD3615CC17A4D30768AF8D46B493B /* Pods-MimirMemoryLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimirMemoryLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9677FDA0DFEB1FF68F84E0F696ACA3A /* MimirMemoryLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MimirMemoryLogger.modulemap; sourceTree = "<group>"; };
 		FB7588D7FFB7774C6BA136ACC6C92110 /* Pods-MimirMemoryLogger_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MimirMemoryLogger_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C5837F08DA6BE1694ECDA88184DD42A /* Frameworks */ = {
+		121CCC8B1FB43CDFE64AD5C5F51CE456 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				615E93C97C4DD64734442FC7A0CEAE64 /* Foundation.framework in Frameworks */,
+				C1ECDAAC7B428A9AB875EA204ADEE112 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55B98B9456CF02F24FD2755EE7CAA82E /* Frameworks */ = {
+		1A0F2F6EE6FE6C1107ADD56EA3B60B36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E2CD5F03C6B92B4C5FE7A8432E7134 /* Foundation.framework in Frameworks */,
+				2131187AC06C31CB3C8CC924BC0A1701 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67769563EE599DD2969DA8F01E5A4AAF /* Frameworks */ = {
+		8AEC80D178A2448518A4BB09766BD88E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C5B7EB835A35A382A9131121A9CFBF /* Foundation.framework in Frameworks */,
+				CD3AC65892D6FCE5E1D7C39016AE7EF8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,14 +114,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		302DEB9CB1A512F237EA9E949D0123F9 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				68DA21F162C443A71551673CBAC2B7DF /* MimirMemoryLogger */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		342A28F1A6C49232115A40F5123264C5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,19 +123,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		68DA21F162C443A71551673CBAC2B7DF /* MimirMemoryLogger */ = {
+		4019ED9F6714F27BCF7AE21C65470AF3 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				19111D202522754C0095D86D /* HeapStackInspector.h */,
-				19111D1E2522754C0095D86D /* HeapStackInspector.m */,
-				19111D1F2522754C0095D86D /* MimirMemoryLogger.swift */,
-				19111D29252275BE0095D86D /* NSObject+HeapInspector.h */,
-				19111D2A252275BE0095D86D /* NSObject+HeapInspector.m */,
-				9A30AD2CEF509FB0A2AE0BDBDA3AAB21 /* Pod */,
-				F10FEE80A7D0CAEA3AC60A54A463C3DE /* Support Files */,
+				5E5E1F00AC10CE8564C66D44CF477516 /* LICENSE */,
+				B1CB2DC00F5867A5D5A50CBA5780D77D /* MimirMemoryLogger.podspec */,
+				A15631D52F26C5DE61996B99CABF6645 /* README.md */,
 			);
-			name = MimirMemoryLogger;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		6959DEC12DE9E5DB78441DE0DBD22A3A /* Pods-MimirMemoryLogger_Tests */ = {
@@ -165,16 +149,6 @@
 			path = "Target Support Files/Pods-MimirMemoryLogger_Tests";
 			sourceTree = "<group>";
 		};
-		9A30AD2CEF509FB0A2AE0BDBDA3AAB21 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9C8EB5DE30C1D096FF984B3C830113B3 /* LICENSE */,
-				72D0A06CD4922FCB72D7964B2EEA8C97 /* MimirMemoryLogger.podspec */,
-				A95FA7DAD94F00A2661C8979EB3519BB /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,15 +157,36 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C8E3353396F475E83F216A332C74CD03 /* MimirMemoryLogger */ = {
+			isa = PBXGroup;
+			children = (
+				4A27737697B46FE3A04DCCBC480F4423 /* HeapStackInspector.h */,
+				35809F89B88A31A38527E265DA685BD0 /* HeapStackInspector.m */,
+				74053F94ED187771698DD929A26FE5DF /* MimirMemoryLogger.swift */,
+				4019ED9F6714F27BCF7AE21C65470AF3 /* Pod */,
+				E9843E505A040562B49618007CC4665B /* Support Files */,
+			);
+			name = MimirMemoryLogger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				302DEB9CB1A512F237EA9E949D0123F9 /* Development Pods */,
+				CF98F71648B19E1C67927EE6F48C3C6D /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				2D3439CB43267B340FFECB63D30EE1F3 /* Products */,
 				342A28F1A6C49232115A40F5123264C5 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CF98F71648B19E1C67927EE6F48C3C6D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E3353396F475E83F216A332C74CD03 /* MimirMemoryLogger */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -202,15 +197,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F10FEE80A7D0CAEA3AC60A54A463C3DE /* Support Files */ = {
+		E9843E505A040562B49618007CC4665B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD64698E1B380BCC0FD3C1210E56FC56 /* MimirMemoryLogger.modulemap */,
-				4ACD42B3024F7CE9EF9FF8C3F8873EAB /* MimirMemoryLogger.xcconfig */,
-				1BA4925A179C040B8BA0F98ADCA4BFD2 /* MimirMemoryLogger-dummy.m */,
-				01B26036CF61F320698ADE7E11AE4717 /* MimirMemoryLogger-Info.plist */,
-				47974FD599B45739F1E3ADDEE2B2510D /* MimirMemoryLogger-prefix.pch */,
-				A9F206EE60935BF7D6A03A307B7FC63C /* MimirMemoryLogger-umbrella.h */,
+				E9677FDA0DFEB1FF68F84E0F696ACA3A /* MimirMemoryLogger.modulemap */,
+				888572E38FA8C59D40915F99F0DD0373 /* MimirMemoryLogger-dummy.m */,
+				A3DFE67C52343D881962A6D265ED994E /* MimirMemoryLogger-Info.plist */,
+				0A888E27EA42B774836E9F3DED948E6C /* MimirMemoryLogger-prefix.pch */,
+				46E334A5AC1266092CC5873947AFDBB7 /* MimirMemoryLogger-umbrella.h */,
+				06FDDBC63E1209E2A85647EA60DD73AC /* MimirMemoryLogger.debug.xcconfig */,
+				CDFC0AF923953904341DF0C982E1236D /* MimirMemoryLogger.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/MimirMemoryLogger";
@@ -236,29 +232,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		55AEF840579A95F89A9C4A51B79ADE32 /* Headers */ = {
+		66B1DDB3AF926964AE0598B8A45E6AE4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4BCD972909DBFAEC7CD3CA0E5230DE /* Pods-MimirMemoryLogger_Example-umbrella.h in Headers */,
+				9F22D61DC031D7830E17413A37A7EBE3 /* HeapStackInspector.h in Headers */,
+				F19C37E5A9C7F947B8EF8F16AA1E43FA /* MimirMemoryLogger-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B987DE227761FA666C2A37530DD4BED1 /* Headers */ = {
+		C667BD8267529928FBA1EE9E54B9FFBE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E55FC63C3BE9D9A1591873CC9A17491 /* MimirMemoryLogger-umbrella.h in Headers */,
-				19111D2B252275BE0095D86D /* NSObject+HeapInspector.h in Headers */,
-				19111D232522754C0095D86D /* HeapStackInspector.h in Headers */,
+				4806F99B12E9911B5389CC01CF535C6A /* Pods-MimirMemoryLogger_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4D08E3A98C0180BAA6007E6E76DD4B6 /* Headers */ = {
+		E2F5075C4446B3785D7BCD70DC92C3B4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5601D2A67294C3941A981342DB8A95 /* Pods-MimirMemoryLogger_Tests-umbrella.h in Headers */,
+				0E024E2872F0FFD334A39756E4FFC6A5 /* Pods-MimirMemoryLogger_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +262,12 @@
 /* Begin PBXNativeTarget section */
 		4C241CDA10441BA68928A8DA0DFE53AD /* MimirMemoryLogger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C71352CFD32BB79738624CB59B5F0B72 /* Build configuration list for PBXNativeTarget "MimirMemoryLogger" */;
+			buildConfigurationList = A1B1F418403D4C82DF6ECD04044F5F12 /* Build configuration list for PBXNativeTarget "MimirMemoryLogger" */;
 			buildPhases = (
-				B987DE227761FA666C2A37530DD4BED1 /* Headers */,
-				3FCD56DEFB226FB3F22665815F970175 /* Sources */,
-				0C5837F08DA6BE1694ECDA88184DD42A /* Frameworks */,
-				B054F3130229092B5E89803E30EEBA76 /* Resources */,
+				66B1DDB3AF926964AE0598B8A45E6AE4 /* Headers */,
+				12AD15788EE2F496CA68579F1EFF527D /* Sources */,
+				1A0F2F6EE6FE6C1107ADD56EA3B60B36 /* Frameworks */,
+				809014DDAF52ABFA89DE0C71B7AC6306 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -285,17 +280,17 @@
 		};
 		C5229E557174ADC9F0951B1EE3CDF202 /* Pods-MimirMemoryLogger_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 672F51C1A5F78D375C02424619EF73EF /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Tests" */;
+			buildConfigurationList = F81C7F67C4BA21860CF730EB673E393C /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Tests" */;
 			buildPhases = (
-				C4D08E3A98C0180BAA6007E6E76DD4B6 /* Headers */,
-				47F3B4DFCA0EE2373C07669DC6E3661F /* Sources */,
-				67769563EE599DD2969DA8F01E5A4AAF /* Frameworks */,
-				C49BC4421632F73C765706BC8C1ABC00 /* Resources */,
+				C667BD8267529928FBA1EE9E54B9FFBE /* Headers */,
+				4ED95CD8B90B835D5B9E7AD28F94207C /* Sources */,
+				8AEC80D178A2448518A4BB09766BD88E /* Frameworks */,
+				5670D771DCA109713DF7570D30D4C47F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7E65E15C63B94167D99DA8B329097487 /* PBXTargetDependency */,
+				1E3C6B72FDAB12B709F83BFFBD683EC6 /* PBXTargetDependency */,
 			);
 			name = "Pods-MimirMemoryLogger_Tests";
 			productName = "Pods-MimirMemoryLogger_Tests";
@@ -304,17 +299,17 @@
 		};
 		FE3BAABFF16A96B35BA76F46BB0BD348 /* Pods-MimirMemoryLogger_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8F7E691897802358A51F8244342C77A /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Example" */;
+			buildConfigurationList = 9E9F1F1474D7D035E8A1824555144A54 /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Example" */;
 			buildPhases = (
-				55AEF840579A95F89A9C4A51B79ADE32 /* Headers */,
-				07F4E8A722E7FD94C5CEC2604C94BC75 /* Sources */,
-				55B98B9456CF02F24FD2755EE7CAA82E /* Frameworks */,
-				92EC26CCC2E153D89D6C1FE1EBB0CE78 /* Resources */,
+				E2F5075C4446B3785D7BCD70DC92C3B4 /* Headers */,
+				A5CE778A328EF3C0F5FE33F108EAB655 /* Sources */,
+				121CCC8B1FB43CDFE64AD5C5F51CE456 /* Frameworks */,
+				33724EC25DFD194A96539BB9D4363346 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7183074BA38DECB8A3195C0A11B378A9 /* PBXTargetDependency */,
+				430AF911ADBCCF2DF4336DFCAAF142E5 /* PBXTargetDependency */,
 			);
 			name = "Pods-MimirMemoryLogger_Example";
 			productName = "Pods-MimirMemoryLogger_Example";
@@ -329,11 +324,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					4C241CDA10441BA68928A8DA0DFE53AD = {
-						LastSwiftMigration = 1200;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -356,21 +346,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		92EC26CCC2E153D89D6C1FE1EBB0CE78 /* Resources */ = {
+		33724EC25DFD194A96539BB9D4363346 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B054F3130229092B5E89803E30EEBA76 /* Resources */ = {
+		5670D771DCA109713DF7570D30D4C47F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C49BC4421632F73C765706BC8C1ABC00 /* Resources */ = {
+		809014DDAF52ABFA89DE0C71B7AC6306 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,86 +370,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		07F4E8A722E7FD94C5CEC2604C94BC75 /* Sources */ = {
+		12AD15788EE2F496CA68579F1EFF527D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F407611E8AA0B46FA028374E2A45550 /* Pods-MimirMemoryLogger_Example-dummy.m in Sources */,
+				82974D30F0489A8B246AAD168F46951F /* HeapStackInspector.m in Sources */,
+				C9EE299557AC1F2EB46C54F3B6B17CAD /* MimirMemoryLogger-dummy.m in Sources */,
+				D7E9305F4BF97F32170530CB732038E1 /* MimirMemoryLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FCD56DEFB226FB3F22665815F970175 /* Sources */ = {
+		4ED95CD8B90B835D5B9E7AD28F94207C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19111D212522754C0095D86D /* HeapStackInspector.m in Sources */,
-				F74BA6513C3FA500B0B2570AE13F3C91 /* MimirMemoryLogger-dummy.m in Sources */,
-				19111D222522754C0095D86D /* MimirMemoryLogger.swift in Sources */,
-				19111D2C252275BE0095D86D /* NSObject+HeapInspector.m in Sources */,
+				F599E54B7E6E594D167F1C69797590B2 /* Pods-MimirMemoryLogger_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47F3B4DFCA0EE2373C07669DC6E3661F /* Sources */ = {
+		A5CE778A328EF3C0F5FE33F108EAB655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587B69ACD4A718DD58695D673EED48D8 /* Pods-MimirMemoryLogger_Tests-dummy.m in Sources */,
+				F074E59A090E1219C173B3B4952F48AD /* Pods-MimirMemoryLogger_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7183074BA38DECB8A3195C0A11B378A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MimirMemoryLogger;
-			target = 4C241CDA10441BA68928A8DA0DFE53AD /* MimirMemoryLogger */;
-			targetProxy = 45AC2188158D27A0FC0BD30FA91F62B6 /* PBXContainerItemProxy */;
-		};
-		7E65E15C63B94167D99DA8B329097487 /* PBXTargetDependency */ = {
+		1E3C6B72FDAB12B709F83BFFBD683EC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MimirMemoryLogger_Example";
 			target = FE3BAABFF16A96B35BA76F46BB0BD348 /* Pods-MimirMemoryLogger_Example */;
-			targetProxy = 7304BCE4375EEE707EE3DA9F63F76730 /* PBXContainerItemProxy */;
+			targetProxy = E5E67737D3AEAFD0735B73FA196F2C62 /* PBXContainerItemProxy */;
+		};
+		430AF911ADBCCF2DF4336DFCAAF142E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MimirMemoryLogger;
+			target = 4C241CDA10441BA68928A8DA0DFE53AD /* MimirMemoryLogger */;
+			targetProxy = 4B0BD6930CBAF5F3E3B4D4CB52925DAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		20C90E010AE99454E326AEA3DEA4AF12 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A740B5AD86648B0ADA4D8ADAE17078EF /* Pods-MimirMemoryLogger_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MimirMemoryLogger_Tests/Pods-MimirMemoryLogger_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MimirMemoryLogger_Tests/Pods-MimirMemoryLogger_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3DD23EEBA44A2596DBF0B82ACA6352F0 /* Release */ = {
+		1FD3ADB149375AFDF3EB2D355EAB3A48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 613DC0DEC41AF2107D05E11A97D08043 /* Pods-MimirMemoryLogger_Example.release.xcconfig */;
 			buildSettings = {
@@ -493,12 +448,44 @@
 			};
 			name = Release;
 		};
-		94B8A8E63E5B1100455BEF54DB5F1D4A /* Release */ = {
+		2016763AFF867C078702D61596D55ADA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ACD42B3024F7CE9EF9FF8C3F8873EAB /* MimirMemoryLogger.xcconfig */;
+			baseConfigurationReference = A740B5AD86648B0ADA4D8ADAE17078EF /* Pods-MimirMemoryLogger_Tests.release.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MimirMemoryLogger_Tests/Pods-MimirMemoryLogger_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MimirMemoryLogger_Tests/Pods-MimirMemoryLogger_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25FF4ADE29F85E538B7BFB045250673F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FDDBC63E1209E2A85647EA60DD73AC /* MimirMemoryLogger.debug.xcconfig */;
+			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -519,16 +506,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		954B075EA269C41254BB0DA75EA32178 /* Debug */ = {
+		2A219BF9E05CBE16805C53A21BA4D035 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1CDD3615CC17A4D30768AF8D46B493B /* Pods-MimirMemoryLogger_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -560,6 +545,71 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		33406DF3DC7707B702E8B8F0CE955CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C139D43A462E0DAC3AD535383BBC5B3 /* Pods-MimirMemoryLogger_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MimirMemoryLogger_Example/Pods-MimirMemoryLogger_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MimirMemoryLogger_Example/Pods-MimirMemoryLogger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88370E5D24D15CB36CB651562D9FBA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFC0AF923953904341DF0C982E1236D /* MimirMemoryLogger.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MimirMemoryLogger/MimirMemoryLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MimirMemoryLogger/MimirMemoryLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MimirMemoryLogger/MimirMemoryLogger.modulemap";
+				PRODUCT_MODULE_NAME = MimirMemoryLogger;
+				PRODUCT_NAME = MimirMemoryLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -619,41 +669,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		B319E0E48C8BD57A434DEEE59D0B93FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ACD42B3024F7CE9EF9FF8C3F8873EAB /* MimirMemoryLogger.xcconfig */;
-			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MimirMemoryLogger/MimirMemoryLogger-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MimirMemoryLogger/MimirMemoryLogger-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MimirMemoryLogger/MimirMemoryLogger.modulemap";
-				PRODUCT_MODULE_NAME = MimirMemoryLogger;
-				PRODUCT_NAME = MimirMemoryLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -719,39 +734,6 @@
 			};
 			name = Debug;
 		};
-		F3690A457FBAB7D3F2D177C949AB87BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C139D43A462E0DAC3AD535383BBC5B3 /* Pods-MimirMemoryLogger_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MimirMemoryLogger_Example/Pods-MimirMemoryLogger_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MimirMemoryLogger_Example/Pods-MimirMemoryLogger_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -764,29 +746,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		672F51C1A5F78D375C02424619EF73EF /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Tests" */ = {
+		9E9F1F1474D7D035E8A1824555144A54 /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				954B075EA269C41254BB0DA75EA32178 /* Debug */,
-				20C90E010AE99454E326AEA3DEA4AF12 /* Release */,
+				33406DF3DC7707B702E8B8F0CE955CD6 /* Debug */,
+				1FD3ADB149375AFDF3EB2D355EAB3A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8F7E691897802358A51F8244342C77A /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Example" */ = {
+		A1B1F418403D4C82DF6ECD04044F5F12 /* Build configuration list for PBXNativeTarget "MimirMemoryLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3690A457FBAB7D3F2D177C949AB87BE /* Debug */,
-				3DD23EEBA44A2596DBF0B82ACA6352F0 /* Release */,
+				25FF4ADE29F85E538B7BFB045250673F /* Debug */,
+				88370E5D24D15CB36CB651562D9FBA8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C71352CFD32BB79738624CB59B5F0B72 /* Build configuration list for PBXNativeTarget "MimirMemoryLogger" */ = {
+		F81C7F67C4BA21860CF730EB673E393C /* Build configuration list for PBXNativeTarget "Pods-MimirMemoryLogger_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B319E0E48C8BD57A434DEEE59D0B93FC /* Debug */,
-				94B8A8E63E5B1100455BEF54DB5F1D4A /* Release */,
+				2A219BF9E05CBE16805C53A21BA4D035 /* Debug */,
+				2016763AFF867C078702D61596D55ADA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
