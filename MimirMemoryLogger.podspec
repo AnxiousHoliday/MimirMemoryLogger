@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MimirMemoryLogger'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'MimirMemoryLogger is a framework that takes snapshots of the iOS device`s heap and logs them to disk for later debugging.'
   s.description      = <<-DESC
 MimirMemoryLogger is a framework that takes snapshots of the iOS device's heap and logs them to disk for later debugging. This was created to make debugging memory issues easier when the device is not connected to Xcode.
