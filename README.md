@@ -43,7 +43,7 @@ These are 2 samples of what the result of using the heap snapshot json file with
 
 ![python script mimir MimirMemoryLogger](./Resources/python-script-sample2.png)
 
-Samples of json memory snapshots are in ./MimirMemoryLogger/Resources/snapshot-samples
+Samples of json memory snapshots are in ./Resources/snapshot-samples
 
 # Usage - Swift
 
@@ -78,6 +78,21 @@ If you want more details on what is happening while saving and getting snapshots
 
 ```swift
 MimirMemoryLogger.verbose = true
+```
+
+# Usage - Python Script
+
+## Viewing the json snapshots in terminal
+This project relies on one Python script that sorts and prettifies the results in a json snapshot file just like in the sample images at the beginning of this readme. This script is located here: `./PythonScripts/MimirMemoryLogger.py`
+
+This script was written using [BeautifulTable](https://github.com/pri22296/beautifultable).
+
+Just call this script with the json file as an argument (samples of json snapshots are in ./Resources/snapshot-samples).
+
+For example:
+
+```bash
+python3 MimirMemoryLogger sample-snapshot.json
 ```
 
 ## Notes
