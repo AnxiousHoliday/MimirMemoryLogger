@@ -21,7 +21,7 @@
     </a>
 </p>
 
-## Memory heap logging framework for iOS (Memory snapshots)
+## Heap logging framework for iOS (Memory snapshots)
 
 ## Overview
 MimirMemoryLogger is a memory logging framework (Swift & Objective-C) that is intended to help developers better debug memory issues when connecting the device to Xcode is not possible.
