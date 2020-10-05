@@ -10,7 +10,6 @@
 #import <malloc/malloc.h>
 #import <mach/mach.h>
 #import <objc/runtime.h>
-#import "NSObject+HeapInspector.h"
 
 static CFMutableSetRef classesLoadedInRuntime = NULL;
 
@@ -20,7 +19,6 @@ typedef struct {
 } rm_maybe_object_t;
 
 @implementation HeapStackInspector
-
 static inline kern_return_t memory_reader(task_t task, vm_address_t remote_address, vm_size_t size, void **local_memory) {
     *local_memory = (void *)remote_address;
     return KERN_SUCCESS;
@@ -44,8 +42,7 @@ static inline void range_callback(task_t task, void *context, unsigned type, vm_
         tryClass = object->isa;
 #endif
         if (tryClass &&
-            CFSetContainsValue(classesLoadedInRuntime, (__bridge const void *)(tryClass)) &&
-            canRecordObject((__bridge id)object)) {
+            CFSetContainsValue(classesLoadedInRuntime, (__bridge const void *)(tryClass))) {
             enumeratorBlock((__bridge id)object, &stop);
             if (stop) {
                 break;
@@ -60,7 +57,7 @@ static inline void range_callback(task_t task, void *context, unsigned type, vm_
     }
     // Refresh the class list on every call in case classes are added to the runtime.
     [self updateRegisteredClasses];
-
+    
     // For another exmple of enumerating through malloc ranges (which helped my understanding of the api) see:
     // http://llvm.org/svn/llvm-project/lldb/tags/RELEASE_34/final/examples/darwin/heap_find/heap/heap_find.cpp
     // Also https://gist.github.com/samdmarshall/17f4e66b5e2e579fd396
@@ -97,8 +94,7 @@ static inline void range_callback(task_t task, void *context, unsigned type, vm_
     }
 }
 
-+ (void)updateRegisteredClasses
-{
++ (void)updateRegisteredClasses {
     if (!classesLoadedInRuntime) {
         classesLoadedInRuntime = CFSetCreateMutable(NULL, 0, NULL);
     } else {
@@ -114,8 +110,7 @@ static inline void range_callback(task_t task, void *context, unsigned type, vm_
 
 #pragma mark - Public
 
-+ (NSDictionary *)heapSnapshot
-{
++ (NSDictionary *)heapSnapshot {
     NSMutableDictionary* response = [[NSMutableDictionary alloc] init];
     NSMutableDictionary* objects = [[NSMutableDictionary alloc] init];
     
@@ -127,9 +122,7 @@ static inline void range_callback(task_t task, void *context, unsigned type, vm_
     [HeapStackInspector enumerateLiveObjectsUsingBlock:^(__unsafe_unretained id object, BOOL *stop) {
         unsigned long sizeOfCurrentObject = malloc_size((__bridge const void *)(object));
         totalSize = totalSize + sizeOfCurrentObject;
-        
         NSString *className = [NSString stringWithFormat:@"%s", object_getClassName(object)];
-        
         if (objects[className] && [objects[className] isKindOfClass:NSMutableDictionary.class]) {
             NSMutableDictionary* existingObjectDictionary = (NSMutableDictionary*)objects[className];
             NSNumber *existingTotalSize = @(0);
@@ -190,4 +183,3 @@ static inline void range_callback(task_t task, void *context, unsigned type, vm_
 }
 
 @end
-

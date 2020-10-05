@@ -8,15 +8,14 @@
 
 import UIKit
 
-public class MimirMemoryLogger: NSObject {
+public class MimirMemoryLogger {
+    private static var isLoggingMemory = false
+    public static var verbose = true
+    
     @objc public static func getSavedSnapshots() -> [URL]? {
         guard let memorySnapshotFiles = getSnapshotFiles() else {
-            print("MimirMemoryLogger no snapshots found")
+            log("MimirMemoryLogger: Getting saved snapshots failed because no snapshots were found")
             return nil
-        }
-        if let loggersFolderDirectory = getLoggersFolderDirectory() {
-            // print out logs directory just in cas
-            print("MimirMemoryLogger folder location: \(loggersFolderDirectory.absoluteURL)")
         }
         return memorySnapshotFiles.map { (memoryLogFile) -> URL in
             return memoryLogFile.filePathURL
@@ -24,30 +23,42 @@ public class MimirMemoryLogger: NSObject {
     }
     
     @objc public static func saveCurrentSnapshotToFile(completion: ((_ fileURL: URL?)->(Void))?) {
-        let start = CFAbsoluteTimeGetCurrent()
+        if isLoggingMemory {
+            log("MimirMemoryLogger: Failed to take heap snapshot and save it because it is already being done in progress")
+            completion?(nil)
+            return
+        }
+        isLoggingMemory = true
+        let saveCurrentSnapshotToFileTimer = ParkBenchTimer()
         createDirectoryIfNecessary()
         guard let folderTargetURL = getLoggersFolderDirectory() else {
             completion?(nil)
             return
         }
-        let snapshot = HeapStackInspector.heapSnapshot()
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: snapshot as Any)
-            let jsonFileTarget = folderTargetURL.appendingPathComponent("\(Date().timeIntervalSince1970).json")
-            FileManager.default.createFile(atPath: jsonFileTarget.path, contents: jsonData, attributes: nil)
-            print("MimirMemoryLogger new snapshot taken -> location: \(jsonFileTarget.absoluteURL)")
-            deleteOldestLogFileIfNecessary()
-            let diff = CFAbsoluteTimeGetCurrent() - start
-            print("MimirMemoryLogger: saveCurrentSnapshotToFile Took \(diff) seconds")
-            completion?(jsonFileTarget)
-        } catch let error as NSError {
-            print("MimirMemoryLogger: creating json: \(error.localizedDescription)")
-            completion?(nil)
+        autoreleasepool {
+            let takingHeapSnapshotTimer = ParkBenchTimer()
+            log("MimirMemoryLogger: Started taking heap snapshot")
+            let snapshot = HeapStackInspector.heapSnapshot()
+            log("MimirMemoryLogger: Finished taking heap snapshot, duration -> \(takingHeapSnapshotTimer.stop()) secs")
+            isLoggingMemory = false
+            do {
+                log("MimirMemoryLogger: Started saving heap snapshot to disk")
+                let jsonData = try JSONSerialization.data(withJSONObject: snapshot as Any)
+                let jsonFileTarget = folderTargetURL.appendingPathComponent("\(Date().timeIntervalSince1970).json")
+                FileManager.default.createFile(atPath: jsonFileTarget.path, contents: jsonData, attributes: nil)
+                log("MimirMemoryLogger: Finished saving heap snapshot to disk, location -> \(jsonFileTarget.absoluteURL)")
+                deleteOldestLogFileIfNecessary()
+                log("MimirMemoryLogger: Total duration (taking heap snapshot + saving to disk) -> \(saveCurrentSnapshotToFileTimer.stop()) sec")
+                completion?(jsonFileTarget)
+            } catch let error as NSError {
+                log("MimirMemoryLogger: Failed to write heap snapshot to disk -> \(error.localizedDescription)")
+                completion?(nil)
+            }
         }
     }
     
     private static func getLoggersFolderDirectory() -> URL? {
-        return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("MemoryLogFiles")
+        return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("MimirMemoryLogFiles")
     }
     
     private static func createDirectoryIfNecessary() {
@@ -57,13 +68,12 @@ public class MimirMemoryLogger: NSObject {
             do {
                 try FileManager.default.createDirectory(atPath: getLoggersFolderDirectory.path, withIntermediateDirectories: true, attributes: nil)
             } catch let error as NSError {
-                print("MimirMemoryLogger: Error creating directory: \(error.localizedDescription)")
+                log("MimirMemoryLogger: Failed while creating directory -> \(error.localizedDescription)")
             }
         }
     }
     
     private static func deleteOldestLogFileIfNecessary() {
-        let start = CFAbsoluteTimeGetCurrent()
         guard var memorySnapshotFiles = getSnapshotFiles() else { return }
         do {
             if memorySnapshotFiles.count > 5 {
@@ -75,16 +85,13 @@ public class MimirMemoryLogger: NSObject {
                     let lastSnapshotFile = memorySnapshotFiles.removeLast()
                     try FileManager.default.removeItem(at: lastSnapshotFile.filePathURL)
                 }
-                let diff = CFAbsoluteTimeGetCurrent() - start
-                print("MimirMemoryLogger: deleteOldestLogFileIfNecessary Took \(diff) seconds")
             }
         } catch let error as NSError {
-            print("MimirMemoryLogger: Error in deleteOldestLogFileIfNecessary: \(error.localizedDescription)")
+            log("MimirMemoryLogger: Failed while trying to delete oldest log files -> \(error.localizedDescription)")
         }
     }
     
     private static func getSnapshotFiles() -> [MemoryLogFile]? {
-        let start = CFAbsoluteTimeGetCurrent()
         guard let loggersFolderDirectory = getLoggersFolderDirectory() else { return nil }
         do {
             let dirContents = try FileManager.default.contentsOfDirectory(atPath: loggersFolderDirectory.path)
@@ -101,11 +108,36 @@ public class MimirMemoryLogger: NSObject {
                 let memoryLogFile = MemoryLogFile(filePathURL: fullPathURL, dateCreated: createdDate)
                 logFiles.append(memoryLogFile)
             }
-            let diff = CFAbsoluteTimeGetCurrent() - start
-            print("MimirMemoryLogger: getSnapshotFiles Took \(diff) seconds")
             return logFiles
         } catch let error as NSError {
-            print("MimirMemoryLogger: Error in deleteOldestLogFileIfNecessary: \(error.localizedDescription)")
+            log("MimirMemoryLogger: Failed trying to fetch snapshot files: \(error.localizedDescription)")
+            return nil
+        }
+    }
+    
+    private static func log(_ text: @escaping @autoclosure () -> Any?) {
+        if verbose {
+            print(text() ?? "")
+        }
+    }
+}
+class ParkBenchTimer {
+    let startTime:CFAbsoluteTime
+    var endTime:CFAbsoluteTime?
+
+    init() {
+        startTime = CFAbsoluteTimeGetCurrent()
+    }
+
+    func stop() -> CFAbsoluteTime {
+        endTime = CFAbsoluteTimeGetCurrent()
+        return duration!
+    }
+
+    var duration:CFAbsoluteTime? {
+        if let endTime = endTime {
+            return endTime - startTime
+        } else {
             return nil
         }
     }
