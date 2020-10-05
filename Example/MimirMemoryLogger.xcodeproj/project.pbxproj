@@ -39,14 +39,14 @@
 		607FACE51AFB9204008FA782 /* MimirMemoryLogger_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimirMemoryLogger_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		64D5C1F03B4210C0E86843B0 /* MimirMemoryLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MimirMemoryLogger.podspec; path = ../MimirMemoryLogger.podspec; sourceTree = "<group>"; };
-		6E3536304FD544AA7495DBBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		64D5C1F03B4210C0E86843B0 /* MimirMemoryLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MimirMemoryLogger.podspec; path = ../MimirMemoryLogger.podspec; sourceTree = "<group>"; };
+		6E3536304FD544AA7495DBBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6FC0DC4747DAA179B3377FA4 /* Pods_MimirMemoryLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimirMemoryLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		749CEAF7E3CE044240CD3EC0 /* Pods-MimirMemoryLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimirMemoryLogger_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MimirMemoryLogger_Tests/Pods-MimirMemoryLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		951018F0A70AD90A77469080 /* Pods-MimirMemoryLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimirMemoryLogger_Tests.release.xcconfig"; path = "Target Support Files/Pods-MimirMemoryLogger_Tests/Pods-MimirMemoryLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9A7111F7039F30E9D8657555 /* Pods-MimirMemoryLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimirMemoryLogger_Example.release.xcconfig"; path = "Target Support Files/Pods-MimirMemoryLogger_Example/Pods-MimirMemoryLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A413EAA88D9F3B251E2BBDD7 /* Pods_MimirMemoryLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimirMemoryLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF53F48E49B89A19E9E32A87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CF53F48E49B89A19E9E32A87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,6 @@
 				749CEAF7E3CE044240CD3EC0 /* Pods-MimirMemoryLogger_Tests.debug.xcconfig */,
 				951018F0A70AD90A77469080 /* Pods-MimirMemoryLogger_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -479,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MimirMemoryLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MimirMemoryLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -516,6 +518,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +537,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
