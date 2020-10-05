@@ -29,10 +29,21 @@
                                     <action selector="takeMemorySnapshotTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BID-5a-1kT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-Kg-9Zf">
+                                <rect key="frame" x="75.5" y="389.5" width="224" height="32"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Get All Memory Snapshots"/>
+                                <connections>
+                                    <action selector="getAllMemorySnapshotsTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="51l-JV-XAP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4QB-hf-Agc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0og-yS-Qs7"/>
+                            <constraint firstItem="RPJ-Kg-9Zf" firstAttribute="top" secondItem="4QB-hf-Agc" secondAttribute="bottom" constant="40" id="0ts-tF-Zgq"/>
+                            <constraint firstItem="RPJ-Kg-9Zf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="UBJ-ev-fZi"/>
                             <constraint firstItem="4QB-hf-Agc" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="f8b-Qs-Py8"/>
                         </constraints>
                     </view>
@@ -45,6 +56,9 @@
     <resources>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
