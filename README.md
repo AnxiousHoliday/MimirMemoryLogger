@@ -85,7 +85,7 @@ MimirMemoryLogger.verbose = true
 ## Viewing the json snapshots in terminal
 This project relies on one Python script that sorts and prettifies the results in a json snapshot file just like in the sample images at the beginning of this readme. This script is located here: `./PythonScripts/MimirMemoryLogger.py`
 
-This script was written using [BeautifulTable](https://github.com/pri22296/beautifultable).
+This script was written with the help of [BeautifulTable](https://github.com/pri22296/beautifultable).
 
 Just call this script with the json file as an argument (samples of json snapshots are in ./Resources/snapshot-samples).
 
