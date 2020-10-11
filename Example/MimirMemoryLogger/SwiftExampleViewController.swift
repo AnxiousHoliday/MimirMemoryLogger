@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SwiftExampleViewController.swift
 //  MimirMemoryLogger
 //
 //  Created by amereid on 09/28/2020.
@@ -9,7 +9,7 @@
 import UIKit
 import MimirMemoryLogger
 
-class ViewController: UIViewController {
+class SwiftExampleViewController: UIViewController {
     @IBAction func takeMemorySnapshotTapped(_ sender: Any) {
         MimirMemoryLogger.saveCurrentSnapshotToFile { (url) -> (Void) in
             guard let url = url else {
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getAllMemorySnapshotsTapped(_ sender: Any) {
-        if let urls = MimirMemoryLogger.getSavedSnapshots() {
+        if let urls = MimirMemoryLogger.getSavedSnapshots(), urls.count > 0 {
             print("URLS of all saved snapshots: \(urls)")
             let alert = UIAlertController(title: "Success", message: "Memory snapshots fetched, locations: \(urls)\nLook at console for more details", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))

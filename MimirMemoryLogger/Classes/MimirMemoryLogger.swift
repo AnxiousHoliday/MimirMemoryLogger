@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class MimirMemoryLogger {
+public class MimirMemoryLogger: NSObject {
     private static var isLoggingMemory = false
     public static var verbose = true
     public static var maxNumberOfSnapshots = 5

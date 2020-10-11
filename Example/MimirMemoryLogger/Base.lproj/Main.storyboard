@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TfX-VB-8cm">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,52 +8,119 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--ObjC Sample-->
+        <scene sceneID="4U7-GP-Tva">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MimirMemoryLogger_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wrp-TH-h2s" customClass="ObjCExampleViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="z4f-1O-75a"/>
+                        <viewControllerLayoutGuide type="bottom" id="V0J-oN-shs"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="Bh8-3v-TnQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QB-hf-Agc">
-                                <rect key="frame" x="88" y="317.5" width="199" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blI-Hr-WBU">
+                                <rect key="frame" x="59" y="269" width="257" height="32"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                <state key="normal" title="Take Memory Snapshot"/>
+                                <state key="normal" title="Take Memory Snapshot (ObjC)"/>
                                 <connections>
-                                    <action selector="takeMemorySnapshotTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BID-5a-1kT"/>
+                                    <action selector="takeMemorySnapshotTapped:" destination="Wrp-TH-h2s" eventType="touchUpInside" id="BXW-Q8-8G9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-Kg-9Zf">
-                                <rect key="frame" x="75.5" y="389.5" width="224" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6B-WP-6gN">
+                                <rect key="frame" x="47" y="341" width="281" height="32"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                <state key="normal" title="Get All Memory Snapshots"/>
+                                <state key="normal" title="Get All Memory Snapshots (ObjC)"/>
                                 <connections>
-                                    <action selector="getAllMemorySnapshotsTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="51l-JV-XAP"/>
+                                    <action selector="getAllMemorySnapshotsTapped:" destination="Wrp-TH-h2s" eventType="touchUpInside" id="3wC-zY-und"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4QB-hf-Agc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0og-yS-Qs7"/>
-                            <constraint firstItem="RPJ-Kg-9Zf" firstAttribute="top" secondItem="4QB-hf-Agc" secondAttribute="bottom" constant="40" id="0ts-tF-Zgq"/>
-                            <constraint firstItem="RPJ-Kg-9Zf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="UBJ-ev-fZi"/>
-                            <constraint firstItem="4QB-hf-Agc" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="f8b-Qs-Py8"/>
+                            <constraint firstItem="y6B-WP-6gN" firstAttribute="top" secondItem="blI-Hr-WBU" secondAttribute="bottom" constant="40" id="87U-wV-qtX"/>
+                            <constraint firstItem="y6B-WP-6gN" firstAttribute="centerX" secondItem="Bh8-3v-TnQ" secondAttribute="centerX" id="8Qj-eK-sqK"/>
+                            <constraint firstItem="blI-Hr-WBU" firstAttribute="centerX" secondItem="Bh8-3v-TnQ" secondAttribute="centerX" id="pHI-7W-tMw"/>
+                            <constraint firstItem="blI-Hr-WBU" firstAttribute="centerY" secondItem="Bh8-3v-TnQ" secondAttribute="centerY" constant="-48.5" id="zWc-4H-4Q3"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="ObjC Sample" id="Luu-6K-2fI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKS-d9-7BD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217" y="134"/>
+            <point key="canvasLocation" x="-143" y="489"/>
+        </scene>
+        <!--Swift Example-->
+        <scene sceneID="uyO-aI-ADY">
+            <objects>
+                <viewController id="uWs-dx-aFE" customClass="SwiftExampleViewController" customModule="MimirMemoryLogger_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3KB-O2-cLs"/>
+                        <viewControllerLayoutGuide type="bottom" id="eot-s4-bXB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6oc-Z4-TUk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QB-hf-Agc">
+                                <rect key="frame" x="59" y="269" width="257" height="32"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Take Memory Snapshot (Swift)"/>
+                                <connections>
+                                    <action selector="takeMemorySnapshotTapped:" destination="uWs-dx-aFE" eventType="touchUpInside" id="x98-oW-Gyn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-Kg-9Zf">
+                                <rect key="frame" x="46.5" y="341" width="282" height="32"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Get All Memory Snapshots (Swift)"/>
+                                <connections>
+                                    <action selector="getAllMemorySnapshotsTapped:" destination="uWs-dx-aFE" eventType="touchUpInside" id="cfe-XV-FWQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RPJ-Kg-9Zf" firstAttribute="centerX" secondItem="6oc-Z4-TUk" secondAttribute="centerX" id="53g-bU-pqf"/>
+                            <constraint firstItem="RPJ-Kg-9Zf" firstAttribute="top" secondItem="4QB-hf-Agc" secondAttribute="bottom" constant="40" id="TlN-TH-8nK"/>
+                            <constraint firstItem="4QB-hf-Agc" firstAttribute="centerY" secondItem="6oc-Z4-TUk" secondAttribute="centerY" constant="-48.5" id="rIv-b8-BAA"/>
+                            <constraint firstItem="4QB-hf-Agc" firstAttribute="centerX" secondItem="6oc-Z4-TUk" secondAttribute="centerX" id="vcM-GF-J6z"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Swift Example" id="0xr-8I-6W2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7t-fJ-YPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="-178"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IGm-dU-gNR">
+            <objects>
+                <tabBarController id="TfX-VB-8cm" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gis-0W-iN7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uWs-dx-aFE" kind="relationship" relationship="viewControllers" id="cw9-Jj-SMR"/>
+                        <segue destination="Wrp-TH-h2s" kind="relationship" relationship="viewControllers" id="0Mt-yR-6mI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOf-tp-Pgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1063" y="126"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
